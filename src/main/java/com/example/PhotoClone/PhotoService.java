@@ -29,11 +29,12 @@ public class PhotoService {
         return db.remove(id);
     }
 
-    public Photo save(String fileName, byte[] data) {
+    public Photo save(String fileName, String contentType, byte[] data) {
         Photo photo = new Photo();
         photo.setId(UUID.randomUUID().toString());
         photo.setName(fileName);
         photo.setData(data);
+        photo.setContentType(contentType);
         db.put(photo.getId(), photo);
         return photo;
     }
