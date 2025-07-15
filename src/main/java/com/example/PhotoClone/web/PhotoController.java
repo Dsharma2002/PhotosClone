@@ -1,7 +1,6 @@
 package com.example.PhotoClone.web;
 
 import java.io.IOException;
-import java.util.Collection;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -31,12 +30,12 @@ public class PhotoController {
     }
 
     @GetMapping("/photos")
-    public Collection<Photo> getAll() {
+    public Iterable<Photo> getAll() {
         return photoService.get();
     }
 
     @GetMapping("/photos/{id}")
-    public Photo get(@PathVariable String id) {
+    public Photo get(@PathVariable Integer id) {
         Photo photo = photoService.get(id);
         if (photo == null) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND);
@@ -45,11 +44,8 @@ public class PhotoController {
     }
 
     @DeleteMapping("/photos/{id}")
-    public void delete(@PathVariable String id) {
-        Photo photo = photoService.remove(id);
-        if (photo == null) {
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND);
-        }
+    public void delete(@PathVariable Integer id) {
+        photoService.remove(id);
     }
 
     @PostMapping("/photos")
