@@ -1,4 +1,4 @@
-package com.example.PhotoClone;
+package com.example.PhotoClone.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

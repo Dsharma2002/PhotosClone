@@ -1,4 +1,4 @@
-package com.example.PhotoClone;
+package com.example.PhotoClone.service;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -6,6 +6,8 @@ import java.util.Map;
 import java.util.UUID;
 
 import org.springframework.stereotype.Service;
+
+import com.example.PhotoClone.model.Photo;
 
 @Service
 public class PhotoService {

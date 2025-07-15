@@ -1,4 +1,4 @@
-package com.example.PhotoClone;
+package com.example.PhotoClone.web;
 
 import java.io.IOException;
 import java.util.Collection;
@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.server.ResponseStatusException;
+
+import com.example.PhotoClone.model.Photo;
+import com.example.PhotoClone.service.PhotoService;
 
 @RestController
 public class PhotoController {
