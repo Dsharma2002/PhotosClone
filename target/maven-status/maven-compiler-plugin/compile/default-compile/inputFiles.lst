@@ -1,0 +1,6 @@
+/Users/divyansh-sharma/Documents/GitHub/PhotosClone/src/main/java/com/example/PhotoClone/PhotoCloneApplication.java
+/Users/divyansh-sharma/Documents/GitHub/PhotosClone/src/main/java/com/example/PhotoClone/model/Photo.java
+/Users/divyansh-sharma/Documents/GitHub/PhotosClone/src/main/java/com/example/PhotoClone/repository/PhotoRepository.java
+/Users/divyansh-sharma/Documents/GitHub/PhotosClone/src/main/java/com/example/PhotoClone/service/PhotoService.java
+/Users/divyansh-sharma/Documents/GitHub/PhotosClone/src/main/java/com/example/PhotoClone/web/DownloadController.java
+/Users/divyansh-sharma/Documents/GitHub/PhotosClone/src/main/java/com/example/PhotoClone/web/PhotoController.java
