@@ -1,0 +1,1 @@
+A starter project for Spring Boot using JPA and H2 database and Maven as build tool.
